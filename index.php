@@ -39,9 +39,23 @@ ini_set('display_errors', 1);
 
 <script>
     showTasks();
+
     $('#sub').click(function () {
-        $('#tasks').empty();
-        showTasks();
+        //$('#tasks').empty();
+        //showTasks();
+        $.get('lib/get.php').done(function(data){
+
+            data = JSON.parse(data);
+            var message = data.message;
+            var status = data.status;
+            var last = message.length-1;
+            if(status == "Success"){
+                console.log(message[last]);
+                $('#tasks').append('id :'+message[last]['id'] + '<br/>');
+                $('#tasks').append('task :'+message[last]['task'] + '<br/>');
+                $('#tasks').append('date :'+message[last]['date'] + '<br/>');
+            }
+        });
     });
 </script>
 

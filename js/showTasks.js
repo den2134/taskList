@@ -8,7 +8,7 @@ function showTasks(){
         data = JSON.parse(data);
         var message = data.message;
         var status = data.status;
-
+        console.log(message);
         if(status == "Success"){
             $.each(message, function(key, object){
                 $.each(object, function (field, value) {
