@@ -7,7 +7,7 @@ function add() {
             var params = $('input').serializeArray();
 
             $.post('lib/post.php', params).done(function (data) {
-                alert(data);
+
             });
     });
 }

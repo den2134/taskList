@@ -2,7 +2,7 @@
  * Created by Денис on 06.02.2016.
  */
 
-$(document).ready(function() {
+function showTasks(){
     $.get('lib/get.php').done(function(data){
 
         data = JSON.parse(data);
@@ -21,4 +21,4 @@ $(document).ready(function() {
         }
 
     });
-});
+}

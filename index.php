@@ -37,5 +37,13 @@ ini_set('display_errors', 1);
 <script src="js/addToDB.js"></script>
 <script src="js/showTasks.js"></script>
 
+<script>
+    showTasks();
+    $('#sub').click(function () {
+        $('#tasks').empty();
+        showTasks();
+    });
+</script>
+
 </body>
 </html>
