@@ -14,5 +14,5 @@ $data = array(
     'status' => $status
 );
 
-echo $status;
+echo json_encode($data);
 

@@ -18,8 +18,6 @@ ini_set('display_errors', 1);
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <!-- Own scripts-->
-    <script src="js/addToDB.js"></script>
 
 </head>
 <body>
@@ -32,12 +30,12 @@ ini_set('display_errors', 1);
             <button id="sub" type="submit" name="submit" onclick="add()">Add</button>
         </div>
     </div>
-    <div class="tasks"></div>
+    <div id="tasks"></div>
 </div>
 
-<script>
-
-</script>
+<!-- Own scripts-->
+<script src="js/addToDB.js"></script>
+<script src="js/showTasks.js"></script>
 
 </body>
 </html>
