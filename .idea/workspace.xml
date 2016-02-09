@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c96535d4-fa0e-48f7-b585-20d9f2eb260e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/addToDB.js" afterPath="$PROJECT_DIR$/js/addToDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/showTasks.js" afterPath="$PROJECT_DIR$/js/showTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/db.php" afterPath="$PROJECT_DIR$/lib/db.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/config.class.php" afterPath="$PROJECT_DIR$/lib/config.php" />
     </list>
     <ignored path="taskList.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,17 +39,46 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.384615">
+            <state vertical-scroll-proportion="-58.846153">
               <caret line="90" column="34" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showTasks.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3224138">
+              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+              <folding>
+                <marker date="1455049359326" expanded="true" signature="747:785" placeholder="INSERT INTO task... " />
+                <marker date="1455049359326" expanded="true" signature="1089:1107" placeholder="SELECT * FRO... task" />
+                <marker date="1455049359326" expanded="true" signature="1089:1127" placeholder="SELECT * FRO... task" />
+                <marker date="1455049359326" expanded="true" signature="1089:1133" placeholder="SELECT * FRO... task" />
+                <marker date="1455049359326" expanded="true" signature="1089:1165" placeholder="SELECT * FRO... task" />
+                <marker date="1455049359326" expanded="true" signature="1554:1582" placeholder="UPDATE task " />
+                <marker date="1455049359326" expanded="true" signature="1554:1601" placeholder="UPDATE task " />
+                <marker date="1455049359326" expanded="true" signature="1554:1604" placeholder="UPDATE task " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showTasks.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/showTasks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5875217">
+            <state vertical-scroll-proportion="-11.689655">
               <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
               <folding>
                 <element signature="n#!!doc;n#showTasks#0" expanded="false" />
@@ -117,25 +145,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/db.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-              <folding>
-                <marker date="1455040431983" expanded="true" signature="752:790" placeholder="INSERT INTO task... " />
-                <marker date="1455040431983" expanded="true" signature="1094:1112" placeholder="SELECT * FRO... task" />
-                <marker date="1455040431983" expanded="true" signature="1094:1132" placeholder="SELECT * FRO... task" />
-                <marker date="1455040431983" expanded="true" signature="1094:1138" placeholder="SELECT * FRO... task" />
-                <marker date="1455040431983" expanded="true" signature="1094:1170" placeholder="SELECT * FRO... task" />
-                <marker date="1455040431983" expanded="true" signature="1559:1587" placeholder="UPDATE task " />
-                <marker date="1455040431983" expanded="true" signature="1559:1606" placeholder="UPDATE task " />
-                <marker date="1455040431983" expanded="true" signature="1559:1609" placeholder="UPDATE task " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -152,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/config.php" />
         <option value="$PROJECT_DIR$/lib/autoload" />
         <option value="$PROJECT_DIR$/lib/autoload.php" />
         <option value="$PROJECT_DIR$/lib/load.php" />
@@ -163,11 +171,12 @@
         <option value="$PROJECT_DIR$/lib/updatePost.php" />
         <option value="$PROJECT_DIR$/lib/get.php" />
         <option value="$PROJECT_DIR$/lib/update.php" />
-        <option value="$PROJECT_DIR$/lib/db.php" />
         <option value="$PROJECT_DIR$/js/addToDB.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/showTasks.js" />
+        <option value="$PROJECT_DIR$/lib/config.php" />
+        <option value="$PROJECT_DIR$/lib/db.php" />
       </list>
     </option>
   </component>
@@ -429,14 +438,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding>
-            <marker date="1455040431983" expanded="true" signature="752:790" placeholder="INSERT INTO task... " />
-            <marker date="1455040431983" expanded="true" signature="1094:1112" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1094:1132" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1094:1138" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1094:1170" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1559:1587" placeholder="UPDATE task " />
-            <marker date="1455040431983" expanded="true" signature="1559:1606" placeholder="UPDATE task " />
-            <marker date="1455040431983" expanded="true" signature="1559:1609" placeholder="UPDATE task " />
+            <marker date="1455049359326" expanded="true" signature="747:785" placeholder="INSERT INTO task... " />
+            <marker date="1455049359326" expanded="true" signature="1089:1107" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1089:1127" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1089:1133" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1089:1165" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1554:1582" placeholder="UPDATE task " />
+            <marker date="1455049359326" expanded="true" signature="1554:1601" placeholder="UPDATE task " />
+            <marker date="1455049359326" expanded="true" signature="1554:1604" placeholder="UPDATE task " />
           </folding>
         </state>
       </provider>
@@ -453,7 +462,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/config.class.php">
+    <entry file="file://$PROJECT_DIR$/lib/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -524,14 +533,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding>
-            <marker date="1455040431983" expanded="true" signature="752:790" placeholder="INSERT INTO task... " />
-            <marker date="1455040431983" expanded="true" signature="1094:1112" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1094:1132" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1094:1138" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1094:1170" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1559:1587" placeholder="UPDATE task " />
-            <marker date="1455040431983" expanded="true" signature="1559:1606" placeholder="UPDATE task " />
-            <marker date="1455040431983" expanded="true" signature="1559:1609" placeholder="UPDATE task " />
+            <marker date="1455049359326" expanded="true" signature="747:785" placeholder="INSERT INTO task... " />
+            <marker date="1455049359326" expanded="true" signature="1089:1107" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1089:1127" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1089:1133" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1089:1165" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1554:1582" placeholder="UPDATE task " />
+            <marker date="1455049359326" expanded="true" signature="1554:1601" placeholder="UPDATE task " />
+            <marker date="1455049359326" expanded="true" signature="1554:1604" placeholder="UPDATE task " />
           </folding>
         </state>
       </provider>
@@ -548,7 +557,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/config.class.php">
+    <entry file="file://$PROJECT_DIR$/lib/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -666,14 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/config.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/addToDB.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -716,31 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding>
-            <marker date="1455040431983" expanded="true" signature="752:790" placeholder="INSERT INTO task... " />
-            <marker date="1455040431983" expanded="true" signature="1094:1112" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1094:1132" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1094:1138" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1094:1170" placeholder="SELECT * FRO... task" />
-            <marker date="1455040431983" expanded="true" signature="1559:1587" placeholder="UPDATE task " />
-            <marker date="1455040431983" expanded="true" signature="1559:1606" placeholder="UPDATE task " />
-            <marker date="1455040431983" expanded="true" signature="1559:1609" placeholder="UPDATE task " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.384615">
-          <caret line="90" column="34" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.92727274">
@@ -751,7 +727,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/showTasks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5875217">
+        <state vertical-scroll-proportion="-11.689655">
           <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
           <folding>
             <element signature="n#!!doc;n#showTasks#0" expanded="false" />
@@ -761,6 +737,39 @@
             <marker date="1455048341397" expanded="true" signature="468:958" placeholder="..." />
             <marker date="1455048341397" expanded="true" signature="468:1014" placeholder="..." />
             <marker date="1455048341397" expanded="true" signature="1530:1738" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-58.846153">
+          <caret line="90" column="34" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3224138">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <marker date="1455049359326" expanded="true" signature="747:785" placeholder="INSERT INTO task... " />
+            <marker date="1455049359326" expanded="true" signature="1089:1107" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1089:1127" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1089:1133" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1089:1165" placeholder="SELECT * FRO... task" />
+            <marker date="1455049359326" expanded="true" signature="1554:1582" placeholder="UPDATE task " />
+            <marker date="1455049359326" expanded="true" signature="1554:1601" placeholder="UPDATE task " />
+            <marker date="1455049359326" expanded="true" signature="1554:1604" placeholder="UPDATE task " />
           </folding>
         </state>
       </provider>

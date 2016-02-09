@@ -1,6 +1,6 @@
 <?php
 
-include 'config.class.php';
+include 'config.php';
 
 class DB{
 
@@ -8,7 +8,7 @@ class DB{
 
     public function __construct(){
         try {
-            $this->dbh = new PDO('mysql: host=localhost; dbname=tasks', 'root', '');
+            $this->dbh = new PDO("mysql: host=".HOST."; dbname=".DBNAME, USER, PASS);
             $this->dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         } catch (PDOException $e) {
