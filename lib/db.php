@@ -36,15 +36,30 @@ class DB{
             }
     }
 
-    public function select(){
+    public function select($chk){
         try{
-            $sth = $this->dbh->query("SELECT * FROM task");
+            $sth = $this->dbh->prepare('SELECT * FROM task WHERE is_checked = :check');
+            $sth->bindParam(':check', $chk);
+            $sth->execute();
             $res = $sth->fetchAll(PDO::FETCH_ASSOC);
             return $res;
 
         } catch(PDOException $e) {
             echo "Error - ".$e->getMessage();
             return false;
+        }
+    }
+
+    public function update($chk = 1){
+        $id = htmlspecialchars($_POST['check']);
+        try{
+            $sth = $this->dbh->prepare('UPDATE task SET is_checked = :check WHERE id = :id');
+            $sth->bindParam(':check', $chk);
+            $sth->bindParam(':id', $_POST['check']);
+            $sth->execute();
+
+        } catch (PDOException $e) {
+            echo "Cant update DB - " . $e->getMessage();
         }
     }
 

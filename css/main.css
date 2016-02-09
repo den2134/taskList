@@ -1,4 +1,18 @@
 .last{
     background-color: #2bae1a;
-    transition: 5s;
+    transition: 1s;
+}
+
+.disable{
+    background-color: #ff4656;
+    transition: 1s;
+}
+
+.enable{
+    background-color: #6bff5a;
+    transition: 1s;
+}
+
+.cTask{
+ color: #999;
 }

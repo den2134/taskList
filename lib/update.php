@@ -7,7 +7,7 @@ $data = [];
 $status = 'Success';
 
 $db = new DB();
-$res = $db->select(0);
+$res = $db->select(1);
 
 $data = array(
     'message' => $res,
@@ -15,4 +15,3 @@ $data = array(
 );
 
 echo json_encode($data);
-
