@@ -14,16 +14,16 @@
 <body>
 
 <div class="container">
-    <div class="add">
-        <h1>You task list</h1>
+    <div class="add form-group ">
         <div id="form">
-            <input type="text" name="task" placeholder="New task" id="inp" onkeyup="check();">
-            <button id="sub" class="disable" type="submit" name="submit" onclick="add();" disabled="disabled">Add</button>
+            <div class="main-name"><h1 class="main-text">You task list :D</h1></div>
+            <input type="text" name="task" class="inp-t input-sm" placeholder="New task" id="inp" onkeyup="check();">
+            <button id="sub" class="disable btn btn-default" type="submit" name="submit" onclick="add();" disabled="disabled">Add</button>
         </div>
     </div>
-    <div id="tasks"></div>
-    <div class="hr"><h3>Completed tasks</h3></div>
-    <div id="done-tasks"></div>
+    <div id="tasks" class="cl-tasks col-md-12 col-sm-12 col-lg-12"></div>
+    <div class="hr col-md-12 col-sm-12 col-lg-12"><h3 class="hr-text">Completed tasks</h3></div>
+    <div id="done-tasks" class="col-md-12 col-sm-12 col-lg-12"></div>
 </div>
 
 <!-- Own scripts-->
@@ -33,6 +33,7 @@
     showTasks();
     showTasksCompleted();
 
+    // Обновляем данные после добавление, выводим последний столбец из БД вместо того, что бы выводить перезаписывать все
     $('#sub').click(function () {
         $.get('lib/get.php').done(function(data){
 
@@ -44,9 +45,11 @@
             if(status == "Success") {
                 $('#tasks').append('<div class="sTask last" ' + 'id='+'t'+message[last]['id']+ '>' +
                     '<input type="checkbox" ' + 'onclick='+'isChecked('+message[last]['id']+')' + ' class="chk" ' + 'value='+message[last]['id'] + '>' +
-                    ' #' + message[last]['id'] + '<br/>' +
-                    'Task: ' + message[last]['task'] + '. ' +
-                    'Date: ' + message[last]['date'] + '<br/>' +
+                    '<p>' +
+                    '<span class="tskNum">' + ' #' + message[last]['id'] +'</span>' + '<br/>' +
+                    '<span class="tskName">' + ' Task:  ' + '</span>' + '<span class="tskText">' + message[last]['task'] + '</span>' + '. ' +
+                    '<span class="tskDate">' + 'Date: ' + message[last]['date'] + '</span>' + '<br/>' +
+                    '</p>' +
                     '</div>')
             }
         });

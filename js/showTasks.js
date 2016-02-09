@@ -13,9 +13,11 @@ function showTasks(){
             $.each(message, function(key, object){
                 $('#tasks').append('<div class="sTask" ' + 'id='+'t'+object['id']+ '>' +
                     '<input type="checkbox" ' + 'onclick='+'isChecked('+object['id']+')' + ' class="chk" ' + 'value='+object['id'] + '>' +
-                    ' #' + object['id'] + '<br/>' +
-                    'Task: ' + object['task'] + '. ' +
-                    'Date: ' + object['date'] + '<br/>' +
+                    '<p>' +
+                    '<span class="tskNum">' + ' #' + object['id'] +'</span>' + '<br/>' +
+                    '<span class="tskName">' + ' Task:  ' + '</span>' + '<span class="tskText">' + object['task'] + '</span>' + '. ' +
+                    '<span class="tskDate">' + 'Date: ' + object['date'] + '</span>' + '<br/>' +
+                    '</p>' +
                     '</div>')
             });
         } else {
@@ -23,7 +25,7 @@ function showTasks(){
         }
     });
 }
-
+// Вывод завершенных заданий в отдельный див
 function showTasksCompleted(){
     $.get('lib/update.php').done(function(data){
 
@@ -35,7 +37,7 @@ function showTasksCompleted(){
                 console.log(object['id']);
                 $('#done-tasks').append('<div class="cTask">' +
                     '#' + object['id'] + '<br/>' +
-                    'Task:' + object['task'] + '. ' +
+                    'Task:' + object['task'] + '. ' + '<br/>' +
                     'Date' + ':' + object['date'] + '<br/>' +
                     '</div>');
                 $('#done-tasks').append('<hr>');

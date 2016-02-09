@@ -1,7 +1,7 @@
 /**
  * Created by Денис on 06.02.2016.
  */
-
+// Проверяем кнопочку добавления
 function check() {
         if ($('#inp').val() != '') {
             $('#sub').removeAttr('disabled');
@@ -14,7 +14,7 @@ function check() {
             $('#sub').addClass('disable');
         }
 }
-
+// Добавление в БД
 function add() {
         var params = $('input').serializeArray();
         $.post('lib/post.php', params).done(function (data) {
@@ -22,7 +22,7 @@ function add() {
             check();
         });
 }
-
+// Проверка чекбокса и добавление выполненых тасков в див
 function isChecked(value){
     $.post('lib/updatePost.php', {check: value}).done(function(data){
             $('#t'+value).remove();

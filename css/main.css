@@ -1,18 +1,96 @@
+body{
+    font-family: Roboto;
+}
+.inp-t{
+    width: 30%;
+}
 .last{
-    background-color: #2bae1a;
+    background-color: #91ff84;
     transition: 1s;
 }
-
 .disable{
-    background-color: #ff4656;
+    background-color: #ffa5a4;
     transition: 1s;
 }
-
+.disable:hover{
+    background-color: #ff5159;
+    transition: 1s;
+}
 .enable{
-    background-color: #6bff5a;
+    background-color: #91ff84;
     transition: 1s;
 }
-
+.enable:hover{
+    background-color: #6bff57;
+    transition: 1s;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0,0.5);
+    box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+#sub{
+    width: 100px;
+    height: 31px;
+    margin-left: -2px;
+}
 .cTask{
  color: #999;
+}
+.main-name{
+    text-align: left;
+    background-color: #e8ffe2;
+    padding-left: 10px;
+    padding-top:10px;
+    margin-bottom:10px;
+    height:80px;
+    -webkit-box-shadow: 0 0 2px rgba(25, 25, 25, 0.5);
+    -moz-box-shadow: 0 0 2px rgba(25, 25, 25, 0.5);
+    box-shadow: 0 0 2px rgba(25, 25, 25, 0.5);
+    line-height: 10px;
+}
+.main-text{
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+}
+.cl-tasks{
+    padding: 0;
+}
+.sTask{
+    -webkit-box-shadow: 0 0 2px rgba(25, 25, 25, 0.5);
+    -moz-box-shadow: 0 0 2px rgba(25, 25, 25, 0.5);
+    box-shadow: 0 0 2px rgba(25, 25, 25, 0.5);
+
+    margin-bottom:5px;
+    padding: 5px 5px 1px 5px;
+}
+.tskNum{
+    font-size: 12px;
+    font-weight: bold;
+}
+.tskName{
+    font-size: 16px;
+    font-weight: bold;
+}
+.tskText{
+    font-size: 15px;
+    font-family: "Times New Roman";
+    font-weight: lighter;
+    text-decoration: underline;
+}
+.tskDate{
+    font-size: 12px;
+    color: #adadad;
+}
+.hr{
+    height: 70px;
+    padding-left: 5px;
+}
+.hr-text{
+    color: #e0ffe1;
+
+    text-shadow: -1px 0 black, 0 1px black,
+                 1px 0 black, 0 -1px black;
+
+    font-size: 30px;
+    font-weight: bold;
 }
